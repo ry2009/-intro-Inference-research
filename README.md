@@ -2,7 +2,7 @@
 
 A research repository demonstrating breakthrough algorithmic speedups for video AI inference, featuring Log-Linear Attention and MesaNet optimizations with real A100 GPU benchmarks.
 
-## 🚀 Key Achievements
+##  Key Achievements
 
 - **Linear Attention**: Achieved 6.55× speedup with true O(T) complexity vs O(T²) 
 - **Log-Linear Attention**: O(T log T) complexity using λ(ℓ) gating mechanisms
@@ -10,7 +10,7 @@ A research repository demonstrating breakthrough algorithmic speedups for video 
 - **Thin VAE**: 38.2× parameter reduction while maintaining quality
 - **Memory-efficient attention**: Chunking for O(T) memory vs O(T²)
 
-## 📊 Benchmark Results
+##  Benchmark Results
 
 Real speedups that scale with sequence length:
 - 256 tokens: 1.56× faster
@@ -18,7 +18,7 @@ Real speedups that scale with sequence length:
 - 1024 tokens: 6.55× faster
 - Average speedup: 3.88× across all tests
 
-## 🔬 Research Implementations
+##  Research Implementations
 
 ### Core Algorithms
 - `final_working_speedups.py` - Main benchmark with all optimizations
@@ -35,7 +35,7 @@ Real speedups that scale with sequence length:
 - `production_scaling_480p_1080p.py` - High-resolution scaling tests
 - `complete_seedance_killer.py` - Full SOTA comparison
 
-## 🛠 Setup
+##  Setup
 
 ```bash
 # Clone the repository
@@ -50,13 +50,13 @@ pip install triton flash-attn xformers
 python final_working_speedups.py
 ```
 
-## 📖 Documentation
+##  Documentation
 
 - `atual_inf_goal/cookbook.md` - Comprehensive technical documentation
 - `SOTA_BENCHMARK_REPORT.md` - Detailed benchmark analysis
 - `RESULTS_SUMMARY.md` - Key findings and results
 
-## 🎯 Research Focus
+##  Research Focus
 
 This repository validates theoretical complexity improvements with real-world measurements:
 
@@ -65,7 +65,7 @@ This repository validates theoretical complexity improvements with real-world me
 3. **Memory Optimization**: Scaling to long sequences with limited GPU memory
 4. **Production Ready**: Real A100 benchmarks showing practical speedups
 
-## 🏆 SOTA Comparisons
+##  SOTA Comparisons
 
 Our implementations achieve speedups comparable to major research papers while using simple PyTorch code, proving that fundamental algorithmic improvements can deliver dramatic performance gains without complex engineering.
 
