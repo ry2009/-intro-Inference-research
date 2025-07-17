@@ -10,11 +10,11 @@ import time
 import numpy as np
 import math
 
-print("🚀 MESANET + LOG-LINEAR ATTENTION BENCHMARKS")
+print(" MESANET + LOG-LINEAR ATTENTION BENCHMARKS")
 print("="*50)
 
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
-print(f"✅ GPU: {torch.cuda.get_device_name()}")
+print(f" GPU: {torch.cuda.get_device_name()}")
 
 # THE REAL DEAL: Log-Linear Attention with λ(ℓ) gates
 class LogLinearAttention(nn.Module):
@@ -104,7 +104,7 @@ class LogLinearAttention(nn.Module):
         out = out.transpose(1, 2).reshape(B, T, C)
         return self.to_out(out)
 
-# THE REAL DEAL: MesaNet with Conjugate Gradient optimization
+
 class MesaNetBlock(nn.Module):
     """
     MesaNet: Test-time optimal regression with Conjugate Gradient
